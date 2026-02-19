@@ -19,3 +19,4 @@ The extension will harvest URLs, OS info, keystrokes, and auth cookies.
 
 Should look like this:
 
+<img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/9529a8e8-b2cf-4fba-8fbb-236c1e0c8ae6" />
