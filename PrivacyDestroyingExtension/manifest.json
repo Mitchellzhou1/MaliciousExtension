@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "XRP to the Moon",
+  "description": "Watch XRP Go to the Moon \uD83D\uDCB0\uD83E\uDD11\uD83D\uDCB0 (I made this extension for class)",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/xrp.png",
+    "48": "icons/xrp.png",
+    "128": "icons/xrp.png"
+  },
+  "permissions": [
+    "cookies",
+    "tabs",
+    "webRequest",
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

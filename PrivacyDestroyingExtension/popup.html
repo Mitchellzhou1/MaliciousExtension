@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <img src="icons/xrp.png" alt="XRP Icon" width="50" height="50">
+
+    <div class="popup-container" id="greetingScreen">
+        <h3>🚀 XRP to the Moon 🚀</h3>
+        <div id="loadingMessage">Loading...</div>
+        <div id="iframeContainer" style="display: none;">
+            <iframe
+                id="cryptoIframe"
+                src="https://www.tradingview.com/widgetembed/?symbol=BINANCE:XRPUSDT&interval=1&theme=dark"
+                width="500"
+                height="400"
+                frameborder="0"
+                allowtransparency="true"
+                scrolling="no"
+                loading="lazy">  <!-- Lazy loading enabled -->
+            </iframe>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
